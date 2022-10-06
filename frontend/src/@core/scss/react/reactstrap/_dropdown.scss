@@ -1,0 +1,95 @@
+// Component Dropdown
+// ========================================================================
+
+.dropdown-menu[data-popper-placement]:not([data-popper-placement^='top-']) {
+  top: 0.5rem;
+  margin: unset !important;
+}
+
+.dropdown-menu[data-popper-placement^='top-'] {
+  bottom: 0.5rem !important;
+  margin: unset !important;
+}
+
+// Navbar Dropdowns
+.dropdown-notification,
+.dropdown-cart {
+  .dropdown-menu {
+    left: inherit !important;
+  }
+}
+
+.dropdown-language {
+  .country-flag {
+    height: 18px !important;
+    width: 18px !important;
+  }
+
+  .dropdown-menu {
+    left: auto !important;
+  }
+}
+
+.dropdown-user {
+  .dropdown-menu {
+    left: auto !important;
+    right: 0;
+  }
+}
+
+// Global
+.dropdown-menu {
+  .dropdown-item:focus {
+    outline: 0;
+  }
+}
+
+// Dropdown Icon
+.dropdown-icon-wrapper {
+  .dropdown-toggle:after {
+    display: none;
+  }
+  .dropdown-menu {
+    min-width: auto;
+    .dropdown-item {
+      padding: 0.5rem 1.1rem;
+      cursor: pointer;
+    }
+  }
+}
+
+// Custom SCSS
+.nav-dropdown {
+  .nav-dropdown-toggle {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0.75rem;
+
+    .nav-dropdown-toggle-avatar {
+      margin-right: 1rem;
+      .avatar-content {
+        font-size: 1rem !important;
+        color: #6e6b7b !important;
+      }
+    }
+
+    &:hover {
+      background: none !important;
+    }
+  }
+  .dropdown-menu {
+    top: 3.5rem !important;
+    left: 1rem !important;
+  }
+}
+
+.account-settings-avatar {
+  width: 7rem !important;
+  height: 7rem !important;
+  .avatar-content {
+    width: 7rem !important;
+    height: 7rem !important;
+    color: #6e6b7b !important;
+    font-size: 1.5rem !important;
+  }
+}

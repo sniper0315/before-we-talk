@@ -1,0 +1,9 @@
+.addStepTab {
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 0 !important;
+}
+
+.addStepTab span {
+  margin: 0.8rem !important;
+}
